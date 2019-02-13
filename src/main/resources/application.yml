@@ -1,0 +1,16 @@
+security:
+    oauth2:
+        client:
+            # From Okta application
+            client-id: "0oaj8ye52jortZThD0h7"
+            client-secret: "OJhV-5Sk8BuxEz0TZWGsukFWiB34CRPwwUzsKH_3"
+            # From Authorization Server's metadata
+            access-token-uri: https://dev-533919.oktapreview.com/oauth2/default/v1/token
+            # This has to be the custom URL or the custom sign-in page won't be visible
+            user-authorization-uri: https://okta.andrewcarterhughes.com/oauth2/default/v1/authorize
+            scope: openid profile email
+        resource:
+            # from your Auth Server's metadata, check .well-known/openid-configuration if not in .well-known/oauth-authorization-server
+            user-info-uri: https://dev-533919.oktapreview.com/oauth2/default/v1/userinfo
+        sso:
+            login-path: /authorization-code/callback
