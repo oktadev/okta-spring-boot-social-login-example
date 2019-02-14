@@ -1,0 +1,12 @@
+application {
+  config {
+    baseName social,
+    packageName com.okta.developer.social,
+    prodDatabaseType postgresql,
+    authenticationType oauth2,
+    buildTool gradle,
+    clientFramework angular,
+    useSass true,
+    testFrameworks [protractor]
+  }
+}
